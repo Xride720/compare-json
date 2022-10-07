@@ -1,0 +1,64 @@
+.SearchBlock {
+  background: #1b1f29e1;
+  border-radius: 26px;
+  padding: 10px 15px;
+  padding-right: 58px;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 320px;
+  border: 1px solid #3ea600 !important;
+  transition: width .3s ease, padding .3s ease;
+  
+  &.collapsed {
+    width: 0;
+    padding: 10px 52px 10px 0;
+  }
+
+  :global {
+    & .ant-input-affix-wrapper-focused {
+      border-width: 0 !important;
+      border-bottom: 1px solid rgba(38, 255, 0, 0.87) !important;
+      box-shadow: none !important;
+    }
+  }
+}
+
+.triggerBtn {
+  font-size: 20px;
+  border-radius: 50%;
+  background: #1b1f29;
+  width: 52px;
+  height: 52px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: absolute;
+  top: 0;
+  right: 0;
+  cursor: pointer;
+  box-shadow: rgb(38, 255, 0) 0px 0px 5px 1px;
+  z-index: 2;
+}
+
+.searchInput {
+  position: relative;
+  z-index: 1;
+  border-width: 0 !important;
+  border-bottom: 1px solid rgba(38, 255, 0, 0.507) !important;
+  transition: width .3s ease, opacity .3s ease, border-color .3s ease !important;
+
+  &:focus {
+    border-width: 0 !important;
+    border-bottom: 1px solid rgba(38, 255, 0, 0.87) !important;
+    box-shadow: none !important;
+  }
+  
+}
+
+
+.collapsed .searchInput {
+  width: 0px;
+  opacity: 0;
+}

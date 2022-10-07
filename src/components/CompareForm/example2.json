@@ -1,0 +1,45 @@
+{
+  "_id": "63408f6b8wqeeefffb62143f",
+  "index": 0,
+  "guid": "f0asd009-2421-4a01-a595-f9954ff40105",
+  "isActive": false,
+  "balance": "$2,332.67",
+  "picture": "https://placehold.it/32x32",
+  "age": 36,
+  "eyeColor": "greenfield",
+  "name": "Odannell Odannell",
+  "gender": "female",
+  "company": "OALU",
+  "email": "odonnjllodonnell@rulu.com",
+  "phone": "+1 (123) 579-2247",
+  "address": "343 Preston Court, Tuttle, Idaho, 9448",
+  "about": "Proident magna ullamco do sit. In voluptate laborum eiusmod ipsum sint laboris. Occaecat ullamco velit sit eu non. Adipisicing eiusmod aute pariatur velit consequat enim incididunt irure qui.\r\n",
+  "registered": "2015-03-02T09:10:45 -03:00",
+  "latitude": 48.422224,
+  "longitude": 111.840672,
+  "tags": [
+    "do",
+    "exc23teur",
+    "irure",
+    "aqwquip",
+    "non",
+    "nosasud",
+    "consequat"
+  ],
+  "friends": [
+    {
+      "id": 0,
+      "name": "Melody Clemefd"
+    },
+    {
+      "id": 1,
+      "name": "Giles Rishardson"
+    },
+    {
+      "id": 2,
+      "name": "Gamble Hodge"
+    }
+  ],
+  "greeting": "Hello, Odonnell Odonnell! You have 9 unread messages.",
+  "favoriteFruit": "strawberry"
+}
