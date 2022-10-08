@@ -16,7 +16,7 @@ jobs:
       - run: echo "${{ secrets.key }}" > "$HOME/.ssh/key"
       - run: chmod 600 "$HOME/.ssh/key"
       # Build app
-      - run: yarn install
-      - run: yarn build
+      - run: npm ci
+      - run: npm run build
       # Deploy
       - run: cd app && rsync -e "ssh -p 20022 -i $HOME/.ssh/key -o StrictHostKeyChecking=no" --archive --compress --delete . host1820111@ftp77.hostland.ru:/home/kolos-off.ru/htdocs/compare-json
