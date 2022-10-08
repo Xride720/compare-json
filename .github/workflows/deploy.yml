@@ -1,0 +1,22 @@
+name: Deploy
+
+on:
+  push:
+    branches:
+      -main
+
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/chekout@v2
+      # Setup key
+      - run: set eu
+      - run: mkdir "$HOME/.ssh"
+      - run: echo "${{ secrets.key }}" > "$HOME/.ssh/key"
+      - run: chmod 600 "$HOME/.ssh/key"
+      # Build app
+      - run: yarn install
+      - run: yarn build
+      # Deploy
+      - run: cd app && rsync -e "ssh -p 20022 -i $HOME/.ssh/key -o StrictHostKeyChecking=no" --archive --compress --delete . host1820111@ftp77.hostland.ru:/home/kolos-off.ru/htdocs/compare-json
