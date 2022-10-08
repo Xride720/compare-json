@@ -11,7 +11,7 @@ jobs:
     steps:
       - uses: actions/chekout@v2
       # Setup key
-      - run: set eu
+      - run: set -eu
       - run: mkdir "$HOME/.ssh"
       - run: echo "${{ secrets.key }}" > "$HOME/.ssh/key"
       - run: chmod 600 "$HOME/.ssh/key"
