@@ -16,18 +16,19 @@
     &.focus {
       background: #1b1f29e1;
     }
+    :global {
+      & .ant-input-affix-wrapper {
+        width: 45%;
+      }
+      & .ant-input-affix-wrapper:first-child {
+        background: #1d4e007e;
+      }
+      & .ant-input-affix-wrapper:last-child {
+        background: #36223981;
+      }
+    }
   }
-  :global {
-    & .ant-input-affix-wrapper {
-      width: 45%;
-    }
-    & .ant-input-affix-wrapper:first-child {
-      background: #1d4e007e;
-    }
-    & .ant-input-affix-wrapper:last-child {
-      background: #36223981;
-    }
-  }
+  
 
   & .logo {
     padding: 0 !important;
